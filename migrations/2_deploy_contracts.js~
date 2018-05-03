@@ -1,0 +1,7 @@
+var TutorialToken = artifacts.require("TutorialToken");
+
+module.exports = function(deplooyer){
+
+    deployer.deploy(TutorialToken);
+
+};
