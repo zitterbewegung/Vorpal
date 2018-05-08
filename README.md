@@ -1,2 +1,2 @@
-# vorpalcoin
-A cryptocurrency pegged on the volatility of BTC to USD.
+# vorpal  
+A simple truffle project that creates a token and puts authentication behind firebase.
