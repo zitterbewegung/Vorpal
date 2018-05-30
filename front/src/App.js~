@@ -4,8 +4,9 @@ import "./App.css";
 
 import { drizzleConnect } from "drizzle-react";
 import { ContractData, ContractForm } from "drizzle-react-components";
-import { withAuthenticator } from 'aws-amplify-react';
-
+//import { withAuthenticator } from 'aws-amplify-react';
+//import aws_exports from './aws-exports'; // specify the location of aws-exports.js file on your project
+//Amplify.configure(aws_exports);
 
 class App extends Component {
   render() {
@@ -63,4 +64,4 @@ const mapStateToProps = state => {
 };
 
 const AppContainer = drizzleConnect(App, mapStateToProps);
-export default withAuthenticator(AppContainer);
+export default AppContainer;

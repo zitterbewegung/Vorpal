@@ -1,7 +1,7 @@
-var TutorialToken = artifacts.require("TutorialToken");
+var VorpalCoin = artifacts.require("VorpalCoin");
 
 module.exports = function(deployer){
 
-    deployer.deploy(TutorialToken);
+    deployer.deploy(VorpalCoin);
     
 };

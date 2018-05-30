@@ -5,9 +5,9 @@ import App from "./App";
 import { DrizzleProvider } from "drizzle-react";
 
 // Import contract
-import TutorialToken from "./contracts/TutorialToken.json";
+import VorpalCoin from "./contracts/VorpalCoin.json";
 
-console.log(TutorialToken);
+console.log(VorpalCoin);
 
 const options = {
   web3: {
@@ -17,7 +17,7 @@ const options = {
       url: "ws://127.0.0.1:7545"
     }
   },
-  contracts: [TutorialToken],
+  contracts: [VorpalCoin],
   events: {}
 };
 
@@ -27,4 +27,4 @@ ReactDOM.render(
   </DrizzleProvider>,
   document.getElementById("root")
 );
-registerServiceWorker();
+

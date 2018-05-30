@@ -20,12 +20,12 @@ class App extends Component {
             <p>
               <strong>Total Supply</strong>:{" "}
               <ContractData
-                contract="TutorialToken"
+                contract="VorpalCoin"
                 method="totalSupply"
                 methodArgs={[{ from: accounts[0] }]}
               />{" "}
               <ContractData
-                contract="TutorialToken"
+                contract="VorpalCoin"
                 method="symbol"
                 hideIndicator
               />
@@ -33,7 +33,7 @@ class App extends Component {
             <p>
               <strong>My Balance</strong>:{" "}
               <ContractData
-                contract="TutorialToken"
+                contract="VorpalCoin"
                 method="balanceOf"
                 methodArgs={[accounts[0]]}
               />
@@ -42,7 +42,7 @@ class App extends Component {
           </header>
           <div className="App-intro">
             <ContractForm
-              contract="TutorialToken"
+              contract="VorpalCoin"
               method="transfer"
               labels={["To Address", "Amount to Send"]}
             />
@@ -59,7 +59,7 @@ const mapStateToProps = state => {
   return {
     accounts: state.accounts,
     drizzleStatus: state.drizzleStatus,
-    TutorialToken: state.contracts.TutorialToken
+    VorpalCoin: state.contracts.VorpalCoin
   };
 };
 

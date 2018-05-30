@@ -1,12 +1,11 @@
 import firebase from "firebase";
+var config = {
+    apiKey: "AIzaSyDVy_QyqIbNSXM-ztw452LBkhFj9rU_dGo",
+    authDomain: "vorpalcoin.firebaseapp.com",
+    databaseURL: "https://vorpalcoin.firebaseio.com",
+    projectId: "vorpalcoin",
+    storageBucket: "vorpalcoin.appspot.com",
+    messagingSenderId: "861789360516"
+};
 
-const app = firebase.initializeApp({
-    apiKey: process.env.REACT_APP_FIREBASE_KEY,
-    authDomain: process.env.REACT_APP_FIREBASE_DOMAIN,
-    databaseURL: process.env.REACT_APP_FIREBASE_DATABASE,
-    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_FIREBASE_SENDER_ID
-});
-
-export default app;
+export default firebase.initializeApp(config);
